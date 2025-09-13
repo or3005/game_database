@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 style="text-align:center; margin-bottom:20px;">Games</h1>
+
+<div class="games-grid">
+    {% for game in games %}
+    <div class="game-card">
+        <div class="game-title">{{ game.title }}</div>
+        <div class="poster-container">
+            <a href="{% url 'game_detail' game.pk %}">
+                <img class="game-poster" src="{{ game.poster.url }}" alt="{{ game.title }}">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

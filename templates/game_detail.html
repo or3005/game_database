@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="game-detail">
+    <img src="{{ game.poster.url }}" alt="{{ game.title }}">
+    <div class="game-info">
+        <h1>{{ game.title }}</h1>
+        <p><strong>Developer:</strong> {{ game.developer }}</p>
+        <p><strong>Platform:</strong> {{ game.platform }}</p>
+        <p><strong>Release Year:</strong> {{ game.release_year }}</p>
+        <p><strong>Genre:</strong> {{ game.genre }}</p>
+        <p><strong>Description:</strong> {{ game.description }}</p>
+        <a href="{% url 'game_list' %}">Back to Games</a>
+    </div>
+</div>
+{% endblock %}

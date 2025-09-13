@@ -1,0 +1,179 @@
+/* רקע אחיד על כל הדפים ופונט אחיד */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1e1e2f; /* צבע רקע אחיד לכל העמודים */
+    font-family: Arial, sans-serif; /* פונט אחיד */
+    color: #f0f0f0;
+}
+
+/* Container המרכזי */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header מעל הקופסה */
+.landing-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.landing-header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.landing-header p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* קופסת login */
+.login-box {
+    background-color: #3a3a5a; /* צבע מובחן מהרקע */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    width: 400px;
+    min-height: 50vh;
+    text-align: left; /* הפונט יהיה מותאם לכיוון הטקסט */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* כאן מוודאים שהפונט זהה לשאר האתר */
+}
+
+/* שדות טופס */
+.form-field {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #2b2b3f;
+    color: #f0f0f0;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* כפתורים */
+.btn, .btn-signup {
+    width: auto;
+    min-width: 150px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #4a90e2;
+    color: #fff;
+}
+.btn-back {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #888;  /* גוון אפור כהה */
+    color: #fff;
+}
+
+.btn-back:hover {
+    background-color: #555;
+}
+.btn:hover {
+    background-color: #357ab8;
+}
+
+.btn-signup {
+    background-color: #50c878;
+    color: #fff;
+}
+
+.btn-signup:hover {
+    background-color: #3da35f;
+}
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* מינימום 45% כדי שיהיו לפחות 2 בשורה */
+    gap: 20px; /* רווח בין הכרטיסים */
+    padding: 20px;
+    align-items: start; /* יישור עליון של הכרטיסים */
+    box-sizing: border-box;
+}
+
+.game-card {
+    background-color: #3a3a5a;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    width: 100%; /* מתאים לרוחב הגריד */
+    min-height: 400px; /* גובה מינימום */
+    box-sizing: border-box;
+}
+
+.poster-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+}
+
+.poster-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: #2b2b3f;
+    border-radius: 8px;
+}
+
+
+.game-detail {
+    display: flex;
+    align-items: flex-start;   /* ליישר את התוכן למעלה */
+    gap: 20px;                 /* רווח בין התמונה לטקסט */
+    padding: 20px;
+}
+
+.game-detail img {
+    display: block;
+    width: auto;               /* רוחב לפי המקור */
+    height: auto;              /* גובה לפי המקור */
+    max-width: 40%;            /* אפשר להגביל את רוחב התמונה */
+    border-radius: 8px;
+}
+
+.game-detail .game-info {
+    flex-grow: 1;              /* לוקח את כל השטח שנותר */
+    color: #f0f0f0;
+}
+
+.game-detail .game-info p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
