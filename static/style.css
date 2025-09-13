@@ -1,14 +1,14 @@
-/* רקע אחיד על כל הדפים ופונט אחיד */
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #1e1e2f; /* צבע רקע אחיד לכל העמודים */
-    font-family: Arial, sans-serif; /* פונט אחיד */
+    background-color: #1e1e2f;
+    font-family: Arial, sans-serif;
     color: #f0f0f0;
 }
 
-/* Container המרכזי */
+
 .landing-container {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ body, html {
     padding: 20px;
 }
 
-/* Header מעל הקופסה */
+
 .landing-header {
     text-align: center;
     margin-bottom: 20px;
@@ -33,23 +33,21 @@ body, html {
     margin-top: 0;
 }
 
-/* קופסת login */
 .login-box {
-    background-color: #3a3a5a; /* צבע מובחן מהרקע */
+    background-color: #3a3a5a;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     width: 400px;
     min-height: 50vh;
-    text-align: left; /* הפונט יהיה מותאם לכיוון הטקסט */
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif; /* כאן מוודאים שהפונט זהה לשאר האתר */
+    font-family: Arial, sans-serif;
 }
 
-/* שדות טופס */
 .form-field {
     width: 100%;
     max-width: 300px;
@@ -74,7 +72,6 @@ body, html {
     box-sizing: border-box;
 }
 
-/* כפתורים */
 .btn, .btn-signup {
     width: auto;
     min-width: 150px;
@@ -93,7 +90,7 @@ body, html {
 .btn-back {
     display: inline-block;
     margin-bottom: 20px;
-    background-color: #888;  /* גוון אפור כהה */
+    background-color: #888;
     color: #fff;
 }
 
@@ -114,10 +111,10 @@ body, html {
 }
 .games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); /* מינימום 45% כדי שיהיו לפחות 2 בשורה */
-    gap: 20px; /* רווח בין הכרטיסים */
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 20px;
     padding: 20px;
-    align-items: start; /* יישור עליון של הכרטיסים */
+    align-items: start;
     box-sizing: border-box;
 }
 
@@ -129,8 +126,8 @@ body, html {
     flex-direction: column;
     overflow: hidden;
     text-align: center;
-    width: 100%; /* מתאים לרוחב הגריד */
-    min-height: 400px; /* גובה מינימום */
+    width: 100%;
+    min-height: 400px;
     box-sizing: border-box;
 }
 
@@ -155,21 +152,21 @@ body, html {
 
 .game-detail {
     display: flex;
-    align-items: flex-start;   /* ליישר את התוכן למעלה */
-    gap: 20px;                 /* רווח בין התמונה לטקסט */
+    align-items: flex-start;
+    gap: 20px;
     padding: 20px;
 }
 
 .game-detail img {
     display: block;
-    width: auto;               /* רוחב לפי המקור */
-    height: auto;              /* גובה לפי המקור */
-    max-width: 40%;            /* אפשר להגביל את רוחב התמונה */
+    width: auto;
+    height: auto;
+    max-width: 40%;
     border-radius: 8px;
 }
 
 .game-detail .game-info {
-    flex-grow: 1;              /* לוקח את כל השטח שנותר */
+    flex-grow: 1;
     color: #f0f0f0;
 }
 
